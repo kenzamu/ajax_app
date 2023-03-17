@@ -5,10 +5,10 @@ function post (){
     const form = document.getElementById("form");
     const formData = new FormData(form);
     const XHR = new XMLHttpRequest();
-    XHR.open("post", "/posts", true);
+    XHR.open("POST", "/posts", true);
     XHR.responseType = "json";
     XHR.send(formData);
   });
 };
 
-window.addEventListener('load',post)
+window.addEventListener('load', post);
